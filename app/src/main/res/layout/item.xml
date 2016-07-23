@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    android:weightSum="1"
+    android:rowCount="4"
+    android:columnCount="3">
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/item_image"
+
+        android:layout_weight="5.25"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/item_author"
+        android:layout_alignStart="@+id/item_title"
+        android:singleLine="true"
+        android:textStyle="italic"
+        android:layout_toStartOf="@+id/delete"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_toRightOf="@+id/item_image"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="2"
+        android:layout_below="@+id/item_title"
+        android:layout_alignBottom="@+id/delete" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16dp"
+        android:textStyle="normal|bold"
+        android:layout_alignTop="@+id/item_image"
+        android:layout_toRightOf="@+id/item_image"
+        android:singleLine="true"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="1"
+        android:layout_alignRight="@+id/delete"
+        android:layout_alignEnd="@+id/delete"
+        android:textColor="@color/material_blue_grey_800"
+        android:onClick="OpenClick" />
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/delete"
+        android:background="@android:drawable/ic_delete"
+        android:onClick="DeleteClick"
+
+        android:adjustViewBounds="true"
+        android:contentDescription=""
+        android:layout_column="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="3"
+        android:layout_below="@+id/item_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">YoutubePlayer</string>
+    <string name="addHint">Enter Youtube Video Link/ID To Add</string>
+    <string name="ErrorInDownload">Error has occurred in downloading Youtube Video Data.</string>
+    <string name="CityLocation">Your Location is: </string>
+    <string name="VideoAddedSuccessfully">Video was Added Successfully.</string>
+    <string name="VideoDeletedSuccessfully">Video was Deleted Successfully.</string>
+    <string name="portrait">Portrait Orientation.</string>
+    <string name="landscape">Landscape Orientation.</string>
+    <string name="revportrait">Reverse Portrait Orientation.</string>
+    <string name="revlandscape">Reverse Landscape Orientation.</string>
+    <string name="enableGPS">Please enable app to access GPS location from Settings.</string>
+    <string name="NoAddressFound">Address Information was not found from GPS information and Location.</string>
+
+</resources>
